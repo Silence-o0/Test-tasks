@@ -33,6 +33,7 @@ epoch: 10.0
 - **Model**: AlexNet
 - **Epochs**: 8 epochs
 - **Accuracy on test dataset**: 98.40%
+  
   Confusion matrix:
   ![Confusion matrix](confusion_matrix.png)
 
