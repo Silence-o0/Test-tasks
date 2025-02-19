@@ -9,7 +9,7 @@ This repository contains a pipeline that integrates two models: one for Named En
 - **Pipeline**: Takes as inputs a text message and an image, and outputs a boolean value indicating whether the text correctly describes the animal in the picture.
 
 ## Datasets
-The datasets for both NER and image classification are available in the following [Google Drive folder](https://drive.google.com/drive/folders/1aifEZPkfM_9oWubFLyK7S0AzjBXF1mUG?usp=drive_link):
+The datasets for both NER and image classification are available in the following [Google Drive folder](https://drive.google.com/drive/folders/1aifEZPkfM_9oWubFLyK7S0AzjBXF1mUG?usp=drive_link).
 A more detailed description of the datasets can be found in the [Notebook]([https://colab.research.google.com/drive/17jakO__iZXqMzsHbciOTl_xjChaRr-eG?usp=sharing](https://github.com/Silence-o0/Test-tasks/blob/main/Task2/notebook.ipynb)).
 
 
