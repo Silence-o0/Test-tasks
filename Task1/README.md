@@ -40,7 +40,7 @@ The MNIST dataset is automatically downloaded and preprocessed:
 
    ```bash
    git clone https://github.com/Silence-o0/Test-tasks
-   cd Test-tasks/Task2
+   cd Test-tasks/Task1
    ```
 
 2. Install the required dependencies:
