@@ -17,21 +17,27 @@ A more detailed description of the datasets can be found in the [Notebook]([http
 
 ### Named Entity Recognition (NER)
 - **Model**: Transformer-based. Distilbert-base-uncased
-- **Epochs**: 10 epochs
+- **Hyperparameters**:
+  - 10 epochs
+  - batch_size=16
+  - learning_rate=2e-5
+  - weight_decay=0.01
 - **Test Dataset Evaluation**:
-eval_loss: 0.04752221703529358
-eval_precision: 1.0
-eval_recall: 0.9523809523809523
-eval_f1: 0.975609756097561
-eval_accuracy: 0.9963369963369964
-eval_runtime: 0.553
-eval_samples_per_second: 37.971
-eval_steps_per_second: 3.616
-epoch: 10.0
+  - eval_loss: 0.04752221703529358
+  - eval_precision: 1.0
+  - eval_recall: 0.9523809523809523
+  - eval_f1: 0.975609756097561
+  - eval_accuracy: 0.9963369963369964
+  - eval_runtime: 0.553
+  - eval_samples_per_second: 37.971
+  - eval_steps_per_second: 3.616
 
 ### Image Classification (CV)
 - **Model**: AlexNet
-- **Epochs**: 8 epochs
+- **Hyperparameters**:
+  - 8 epochs
+  - batch_size=16
+  - learning_rate=1e-4
 - **Accuracy on test dataset**: 98.40%
   
   Confusion matrix:
