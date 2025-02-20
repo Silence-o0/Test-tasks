@@ -21,9 +21,9 @@ def cv_inference(image_path):
     """
     threshold = 0.5
 
-    # Loading class names from the training dataset
-    dataset = datasets.ImageFolder("data_cv/train")
-    class_names = dataset.classes
+    # Init list of classes names
+    class_names = ['bear', 'cat', 'cow', 'crab', 'crow', 'deer', 'dog', 'duck', 'flamingo', 'fox',
+                   'goat', 'goose', 'horse', 'lion', 'owl', 'tiger', 'wolf', 'zebra']
 
     # Initializing AlexNet model with a modified classifier layer
     model = models.alexnet(weights=None)
@@ -31,7 +31,7 @@ def cv_inference(image_path):
 
     model_path = "cv_model.pth"
     if not os.path.exists(model_path):
-        print(f"Error: Model file not found at ./{model_path}")
+        print(f"Error: Model file not found at .Test-tasks/Task2/{model_path}")
         return None
 
     # Loading the trained model weights
@@ -61,4 +61,3 @@ def cv_inference(image_path):
         print("Unknown animal. The model can't recognize it.")
         return None
     return class_names[predicted.item()]
-
