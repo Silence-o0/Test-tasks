@@ -62,7 +62,7 @@ A more detailed description of the datasets can be found in the [Notebook]([http
 
    Optional: If you want to skip the training steps and go ahead to run the pipeline, you can download the prepared models. You can find them in the 'Models' folder in the Google Drive directory above.
 Place the file 'cv_model.pth' in the directory ./Test-tasks/Task2.
-Unzip the 'ner_model' archive into ./Test-tasks/Task2/ner_model."
+Unzip the 'ner_model' archive into ./Test-tasks/Task2/ner_model.
    
 
 5. Train the NER Model:
