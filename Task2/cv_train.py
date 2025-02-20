@@ -33,17 +33,15 @@ criterion = nn.CrossEntropyLoss()
 optimizer = optim.SGD(net.parameters(), lr=1e-4, momentum=0.9)
 
 
-def train_model(model, criterion, optimizer, train_loader, valid_loader, num_epochs=10):
+def train_model(model, train_loader, valid_loader, num_epochs=10):
     '''
     Model training using the animal dataset.
 
     Parameters:
     model: Neural network model
-    criterion: Loss function
-    optimizer: Optimizer for model training
     train_loader: DataLoader for training data
     valid_loader: DataLoader for validation data
-    num_epochs (int): Number of epochs to train
+    num_epochs: Number of epochs to train
     '''
     for epoch in range(num_epochs):
         model.train()
@@ -131,7 +129,7 @@ test_data = datasets.ImageFolder("data_cv/test", transform=transform)
 test_loader = DataLoader(test_data, batch_size=16, shuffle=False)
 
 # Model training (8 epochs) and saving
-train_model(net, criterion, optimizer, train_loader, valid_loader, num_epochs=8)
+train_model(net, train_loader, valid_loader, num_epochs=8)
 torch.save(net.state_dict(), "cv_model.pth")
 
 # Model evaluation and generating confusion matrix
